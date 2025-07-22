@@ -9,7 +9,7 @@ let cartItemsProducts = document.querySelector("#cartItemsProducts")
 
 let cartArray = JSON.parse(localStorage.getItem("cart_items"))||[]
 console.log(cartArray)
-
+console.log(cartItemsProducts)
   let totalPrice = cartArray.reduce((acc,el)=>{
  return acc+el.price
   },0)
